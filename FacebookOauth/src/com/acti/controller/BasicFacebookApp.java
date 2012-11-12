@@ -31,7 +31,7 @@ public class BasicFacebookApp {
 		HttpSession session=request.getSession(true);
 		String redirest_Facebool="https://www.facebook.com/dialog/oauth/?" +
 				"client_id=XXXXXXXXXX&" +
-				"redirect_uri=http://xxxxxxxxxxxxxxxxxxxxx.com/gettingCode&" +
+				"redirect_uri=http://xxxxxxxxxxxxxxxxxxxx.com/gettingCode&" +
 				"response_type=code&" +
 				"state=litu101";
 		response.sendRedirect(redirest_Facebool);
