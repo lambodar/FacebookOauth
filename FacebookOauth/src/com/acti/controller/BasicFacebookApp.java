@@ -30,8 +30,8 @@ public class BasicFacebookApp {
 	public void rediredttoFacebook(HttpServletRequest request,HttpServletResponse response) throws IOException{
 		HttpSession session=request.getSession(true);
 		String redirest_Facebool="https://www.facebook.com/dialog/oauth/?" +
-				"client_id=271432612959469&" +
-				"redirect_uri=http://facebookoauthforbasicinformati.appspot.com/gettingCode&" +
+				"client_id=XXXXXXXXXX&" +
+				"redirect_uri=http://xxxxxxxxxxxxxxxxxxxxx.com/gettingCode&" +
 				"response_type=code&" +
 				"state=litu101";
 		response.sendRedirect(redirest_Facebool);
@@ -49,9 +49,9 @@ public class BasicFacebookApp {
 		//http://localhost:8888/gettingCode
 		try {
         	String inputLine;
-        	String url_For_AccesToken= "https://graph.facebook.com/oauth/access_token?client_id=271432612959469&" +
-            		"redirect_uri=http://facebookoauthforbasicinformati.appspot.com/gettingCode&" +
-            		"client_secret=e86d086c3ab02cf4a36a4661a216e3ac&" +
+        	String url_For_AccesToken= "https://graph.facebook.com/oauth/access_token?client_id=xxxxxxxxxx&" +
+            		"redirect_uri=http://xxxxxxxxxxxxxxxx.com/gettingCode&" +
+            		"client_secret=xxxxxxxxxxxxxxxxxx&" +
             		"code="+fb_code;
             URL url=new URL(url_For_AccesToken);
             HttpURLConnection connection=(HttpURLConnection)url.openConnection();
